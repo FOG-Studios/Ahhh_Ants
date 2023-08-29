@@ -1,0 +1,7 @@
+res://default_env.tres
+res://Scenes/SplashControl.tscn
+res://Scenes/TileMap.tscn
+res://Scenes/AntHill.tscn
+res://Scenes/Carl.tscn
+res://Scenes/new_set.tscn
+res://Scenes/WorkerAnt.tscn

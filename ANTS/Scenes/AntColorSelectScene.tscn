@@ -1,0 +1,215 @@
+[gd_scene load_steps=9 format=3 uid="uid://cobff51oeytf1"]
+
+[ext_resource type="Script" path="res://Scripts/AntColorSelectScene.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cqxhns0kkuwgv" path="res://Assets/Anticon.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://b4pk65ugm37c1" path="res://Assets/AntSpider.png" id="3"]
+[ext_resource type="FontFile" uid="uid://dh7kinim2mddj" path="res://EquipmentPro.ttf" id="4"]
+[ext_resource type="Texture2D" uid="uid://dpaj3ahnbdev2" path="res://Assets/anthillmenu.png" id="5"]
+
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("4")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/64/0 = Vector2(0, 0)
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/32/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/64/0 = Vector2(0, 0)
+cache/0/64/0/ascent = 0.0
+cache/0/64/0/descent = 0.0
+cache/0/64/0/underline_position = 0.0
+cache/0/64/0/underline_thickness = 0.0
+cache/0/64/0/scale = 1.0
+cache/0/64/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/64/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/64/0/kerning_overrides/64/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("4")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/32/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/32/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("4")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/32/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/32/0 = Vector2(0, 0)
+
+[node name="AntColorSelectScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+metadata/_edit_use_anchors_ = true
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("5")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer2" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.115
+anchor_right = 1.0
+anchor_bottom = 1.0
+metadata/_edit_use_anchors_ = true
+
+[node name="AntSprite" type="TextureRect" parent="CenterContainer2"]
+layout_mode = 2
+texture = ExtResource("2")
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.229938
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("2")
+theme_override_font_sizes/font_size = 64
+text = "Choose Ant Color"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.800926
+anchor_right = 1.0
+anchor_bottom = 0.888889
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorSelected" type="TextureButton" parent="CenterContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3")
+
+[node name="GoLabel" type="Label" parent="CenterContainer/ColorSelected"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.136
+anchor_top = -0.578
+anchor_right = 1.08935
+anchor_bottom = 0.0566038
+offset_left = 0.432
+offset_top = -0.365999
+offset_right = 0.459991
+offset_bottom = 1.0
+theme_override_colors/font_color = Color(0.694118, 0.141176, 0.909804, 1)
+theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 32
+text = "READY!"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ChooseColorLabel" type="Label" parent="CenterContainer/ColorSelected"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.698516
+anchor_top = -2.48102
+anchor_right = 1.74148
+anchor_bottom = -0.490377
+offset_left = 0.308001
+offset_top = 0.493996
+offset_right = 0.0279999
+offset_bottom = -0.00999451
+theme_override_colors/font_color = Color(0.466667, 0.0431373, 0.498039, 1)
+theme_override_fonts/font = SubResource("3")
+theme_override_font_sizes/font_size = 32
+text = "Please Choose Color First"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer3" type="CenterContainer" parent="."]
+layout_mode = 0
+anchor_top = 0.315
+anchor_right = 1.0
+anchor_bottom = 0.421667
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer3"]
+layout_mode = 2
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 0
+columns = 5
+
+[node name="RedButton" type="TextureButton" parent="CenterContainer3/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+
+[node name="BlueButton" type="TextureButton" parent="CenterContainer3/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+
+[node name="OrangeButton" type="TextureButton" parent="CenterContainer3/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+
+[node name="BlackButton" type="TextureButton" parent="CenterContainer3/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+
+[node name="PinkButton" type="TextureButton" parent="CenterContainer3/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+
+[connection signal="pressed" from="CenterContainer/ColorSelected" to="." method="_on_ColorSelected_pressed"]
+[connection signal="pressed" from="CenterContainer3/GridContainer/RedButton" to="." method="_on_RedButton_pressed"]
+[connection signal="pressed" from="CenterContainer3/GridContainer/BlueButton" to="." method="_on_BlueButton_pressed"]
+[connection signal="pressed" from="CenterContainer3/GridContainer/OrangeButton" to="." method="_on_OrangeButton_pressed"]
+[connection signal="pressed" from="CenterContainer3/GridContainer/BlackButton" to="." method="_on_BlackButton_pressed"]
+[connection signal="pressed" from="CenterContainer3/GridContainer/PinkButton" to="." method="_on_PinkButton_pressed"]

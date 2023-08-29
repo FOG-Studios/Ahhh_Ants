@@ -1,0 +1,456 @@
+[gd_scene load_steps=24 format=3 uid="uid://cvo5tjox0ft84"]
+
+[ext_resource type="Texture2D" uid="uid://wx1h1b0g4gv6" path="res://Assets/AntProfile.png" id="1"]
+[ext_resource type="FontFile" uid="uid://l5p47kllst7d" path="res://Assets/quan.ttf" id="2"]
+[ext_resource type="Texture2D" uid="uid://cqxhns0kkuwgv" path="res://Assets/Anticon.png" id="3"]
+[ext_resource type="Script" path="res://Scripts/WorkerAntProfile.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://r2jlhvhj0kfw" path="res://Assets/DefenceIcon.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dpkqj0drjnuhb" path="res://Assets/WhiteSquare32x32.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dmgvifkqdt7h8" path="res://Assets/AntFace.png" id="7"]
+
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("2")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/16/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/16/0/glyphs/0/size = Vector2(0, 0)
+cache/0/16/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/16/0/glyphs/0/texture_idx = -1
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/9/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/10/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/8/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/8/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/8/0/glyphs/0/size = Vector2(0, 0)
+cache/0/8/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/8/0/glyphs/0/texture_idx = -1
+cache/0/8/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/9/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/10/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/9/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/9/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/9/0/glyphs/0/size = Vector2(0, 0)
+cache/0/9/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/9/0/glyphs/0/texture_idx = -1
+cache/0/9/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/9/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/9/0/kerning_overrides/9/0 = Vector2(0, 0)
+cache/0/9/0/kerning_overrides/10/0 = Vector2(0, 0)
+cache/0/9/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/9/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/10/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/10/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/10/0/glyphs/0/size = Vector2(0, 0)
+cache/0/10/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/10/0/glyphs/0/texture_idx = -1
+cache/0/10/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/10/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/10/0/kerning_overrides/9/0 = Vector2(0, 0)
+cache/0/10/0/kerning_overrides/10/0 = Vector2(0, 0)
+cache/0/10/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/10/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/11/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/11/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/11/0/glyphs/0/size = Vector2(0, 0)
+cache/0/11/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/11/0/glyphs/0/texture_idx = -1
+cache/0/11/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/9/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/10/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/12/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/12/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/12/0/glyphs/0/size = Vector2(0, 0)
+cache/0/12/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/12/0/glyphs/0/texture_idx = -1
+cache/0/12/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/9/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/10/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/12/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("2")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxFlat" id="4"]
+bg_color = Color(0.580392, 0.32549, 0.678431, 1)
+
+[sub_resource type="StyleBoxFlat" id="13"]
+bg_color = Color(0.211765, 1, 0.0235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="14"]
+bg_color = Color(0.211765, 1, 0.0235294, 1)
+
+[sub_resource type="FontFile" id="5"]
+fallbacks = Array[Font]([ExtResource("2")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxFlat" id="6"]
+bg_color = Color(0.580392, 0.32549, 0.678431, 1)
+
+[sub_resource type="StyleBoxFlat" id="15"]
+bg_color = Color(0.211765, 1, 0.0235294, 1)
+
+[sub_resource type="FontFile" id="7"]
+fallbacks = Array[Font]([ExtResource("2")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxFlat" id="8"]
+bg_color = Color(0.580392, 0.32549, 0.678431, 1)
+
+[sub_resource type="StyleBoxFlat" id="16"]
+bg_color = Color(0.211765, 1, 0.0235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="10"]
+bg_color = Color(0.580763, 0.326099, 0.678711, 1)
+
+[sub_resource type="FontFile" id="11"]
+fallbacks = Array[Font]([ExtResource("2")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxEmpty" id="12"]
+
+[sub_resource type="StyleBoxFlat" id="17"]
+bg_color = Color(0.580392, 0.32549, 0.678431, 1)
+
+[sub_resource type="FontFile" id="18"]
+fallbacks = Array[Font]([ExtResource("2")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[node name="WorkerAntProfile" type="Control"]
+custom_minimum_size = Vector2(300, 470)
+layout_mode = 3
+anchor_right = 0.26
+anchor_bottom = 0.725
+offset_right = 0.47998
+offset_bottom = 0.199982
+script = ExtResource("4")
+metadata/_edit_use_anchors_ = true
+
+[node name="AntProfile" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(160, 256)
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 0
+texture = ExtResource("1")
+expand_mode = 1
+
+[node name="Anticon" type="TextureRect" parent="AntProfile"]
+custom_minimum_size = Vector2(57, 96)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.0574468
+anchor_right = 0.59
+anchor_bottom = 0.261511
+offset_right = -1.52588e-05
+offset_bottom = 0.0899963
+texture = ExtResource("3")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextControl" type="Control" parent="AntProfile"]
+layout_mode = 1
+anchor_left = 0.0633333
+anchor_top = 0.346809
+anchor_right = 0.936667
+anchor_bottom = 0.691489
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="MessageLabel" type="Label" parent="AntProfile/TextControl"]
+custom_minimum_size = Vector2(224, 152)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0763359
+anchor_top = 0.0555556
+anchor_right = 0.931176
+anchor_bottom = 0.993451
+offset_right = 0.0319824
+offset_bottom = 0.0608673
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("2")
+theme_override_font_sizes/font_size = 16
+text = "Hello your Majesty, thank you for visiting me. From here, or the control panel, you can change my name or my job. I am at your service!
+
+
+
+
+
+
+FOR THE CROWN!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="FoodButton" type="Button" parent="AntProfile/TextControl"]
+custom_minimum_size = Vector2(106, 18)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0572519
+anchor_top = 1.01852
+anchor_right = 0.461832
+anchor_bottom = 1.12963
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_fonts/font = SubResource("3")
+theme_override_styles/normal = SubResource("4")
+theme_override_styles/focus = SubResource("13")
+text = "Gather Food"
+metadata/_edit_use_anchors_ = true
+
+[node name="WhiteSquare32X32" type="Sprite2D" parent="AntProfile/TextControl/FoodButton"]
+visible = false
+show_behind_parent = true
+position = Vector2(30.0358, 4.98564)
+scale = Vector2(1.99776, 0.441592)
+texture = ExtResource("6")
+
+[node name="DefendButton" type="Button" parent="AntProfile/TextControl"]
+custom_minimum_size = Vector2(106, 18)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.541985
+anchor_top = 1.01852
+anchor_right = 0.946565
+anchor_bottom = 1.12963
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Coming Soon"
+focus_mode = 0
+theme_override_fonts/font = SubResource("3")
+theme_override_styles/normal = SubResource("4")
+theme_override_styles/focus = SubResource("14")
+text = "Defend Nest"
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="WhiteSquare32X32" type="Sprite2D" parent="AntProfile/TextControl/DefendButton"]
+visible = false
+show_behind_parent = true
+position = Vector2(30.0314, 4.98564)
+scale = Vector2(1.998, 0.442)
+texture = ExtResource("6")
+
+[node name="WoodButton" type="Button" parent="AntProfile/TextControl"]
+custom_minimum_size = Vector2(106, 18)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0572519
+anchor_top = 1.2284
+anchor_right = 0.461832
+anchor_bottom = 1.33951
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_fonts/font = SubResource("5")
+theme_override_styles/normal = SubResource("6")
+theme_override_styles/focus = SubResource("15")
+text = "Gather Wood"
+metadata/_edit_use_anchors_ = true
+
+[node name="WhiteSquare32X32" type="Sprite2D" parent="AntProfile/TextControl/WoodButton"]
+visible = false
+show_behind_parent = true
+position = Vector2(30.0358, 4.98564)
+scale = Vector2(1.99776, 0.441592)
+texture = ExtResource("6")
+
+[node name="LeafButton" type="Button" parent="AntProfile/TextControl"]
+custom_minimum_size = Vector2(106, 18)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.541985
+anchor_top = 1.2284
+anchor_right = 0.946565
+anchor_bottom = 1.33951
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_fonts/font = SubResource("7")
+theme_override_styles/normal = SubResource("8")
+theme_override_styles/focus = SubResource("16")
+text = "Gather Leaf"
+metadata/_edit_use_anchors_ = true
+
+[node name="WhiteSquare32X32" type="Sprite2D" parent="AntProfile/TextControl/LeafButton"]
+visible = false
+show_behind_parent = true
+position = Vector2(30.0357, 4.98564)
+scale = Vector2(1.99776, 0.441592)
+texture = ExtResource("6")
+
+[node name="XButton" type="Button" parent="AntProfile/TextControl"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0381679
+anchor_top = -0.851852
+anchor_right = 0.129771
+anchor_bottom = -0.703704
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 1
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/normal = SubResource("10")
+text = "X "
+alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="NameLabel" type="LineEdit" parent="AntProfile/TextControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0343511
+anchor_top = -0.160494
+anchor_right = 0.965649
+anchor_bottom = -0.0617284
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("11")
+theme_override_styles/normal = SubResource("12")
+theme_override_styles/focus = SubResource("17")
+text = "Worker Ant 01"
+max_length = 13
+expand_to_text_length = true
+caret_blink = true
+caret_blink_interval = 0.5
+metadata/_edit_use_anchors_ = true
+
+[node name="AntFace" type="Sprite2D" parent="AntProfile/TextControl"]
+position = Vector2(28, 255)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7")
+
+[node name="ItemCarryingIcon" type="TextureRect" parent="AntProfile"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.766667
+anchor_top = 0.0382638
+anchor_right = 0.927
+anchor_bottom = 0.140851
+offset_top = 0.0160007
+offset_right = -0.100006
+offset_bottom = -0.200005
+texture = ExtResource("5")
+metadata/_edit_use_anchors_ = true
+
+[node name="MessageLabel" type="Label" parent="AntProfile"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.236667
+anchor_top = 0.810638
+anchor_right = 0.936667
+anchor_bottom = 0.968085
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("18")
+text = "Let's see, left at Albuquerque Ave, right at Ant Blvd..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="CloseTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[connection signal="button_up" from="AntProfile/TextControl/FoodButton" to="." method="_on_FoodButton_button_up"]
+[connection signal="button_up" from="AntProfile/TextControl/DefendButton" to="." method="_on_DefendButton_button_up"]
+[connection signal="button_up" from="AntProfile/TextControl/WoodButton" to="." method="_on_WoodButton_button_up"]
+[connection signal="button_up" from="AntProfile/TextControl/LeafButton" to="." method="_on_LeafButton_button_up"]
+[connection signal="focus_entered" from="AntProfile/TextControl/NameLabel" to="." method="_on_NameLabel_focus_entered"]
+[connection signal="text_submitted" from="AntProfile/TextControl/NameLabel" to="." method="_on_NameLabel_text_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="CloseTimer" to="." method="_on_CloseTimer_timeout"]

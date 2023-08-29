@@ -1,0 +1,383 @@
+[gd_scene load_steps=25 format=3 uid="uid://dci7kwblq1dwe"]
+
+[ext_resource type="Texture2D" uid="uid://clo5t6jt14cea" path="res://Assets/Cloud6.png" id="1"]
+[ext_resource type="Script" path="res://Scripts/SplashControl.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dorrjr1gxpjgf" path="res://Assets/Cloud1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bdhh3bo0bcr4u" path="res://Assets/Cloud2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://d4lrs63x8fv86" path="res://Assets/Cloud3.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://6p28b1fkxci1" path="res://Assets/Cloud5.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cqxhns0kkuwgv" path="res://Assets/Anticon.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bo4xmcevirhkq" path="res://Assets/Cloud4.png" id="8"]
+[ext_resource type="FontFile" uid="uid://l5p47kllst7d" path="res://Assets/quan.ttf" id="9"]
+[ext_resource type="Texture2D" uid="uid://dpkqj0drjnuhb" path="res://Assets/WhiteSquare32x32.png" id="10"]
+
+[sub_resource type="AnimatedTexture" id="1"]
+frames = 6
+frame_0/texture = ExtResource("8")
+frame_1/texture = ExtResource("1")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("6")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("3")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("5")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="2"]
+frames = 6
+frame_0/texture = ExtResource("3")
+frame_1/texture = ExtResource("5")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("6")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("1")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("8")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="3"]
+frames = 6
+frame_0/texture = ExtResource("1")
+frame_1/texture = ExtResource("4")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("5")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("8")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("3")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("6")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="4"]
+frames = 6
+frame_0/texture = ExtResource("1")
+frame_1/texture = ExtResource("5")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("6")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("8")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("4")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="5"]
+frames = 6
+frame_0/texture = ExtResource("4")
+frame_1/texture = ExtResource("3")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("8")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("6")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("5")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("1")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="6"]
+frames = 6
+frame_0/texture = ExtResource("5")
+frame_1/texture = ExtResource("1")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("8")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("3")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("6")
+frame_5/duration = 1.0
+
+[sub_resource type="FontFile" id="7"]
+fallbacks = Array[Font]([ExtResource("9")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/64/0 = Vector2(0, 0)
+cache/0/64/0/ascent = 0.0
+cache/0/64/0/descent = 0.0
+cache/0/64/0/underline_position = 0.0
+cache/0/64/0/underline_thickness = 0.0
+cache/0/64/0/scale = 1.0
+cache/0/64/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/64/0/kerning_overrides/64/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxTexture" id="8"]
+modulate_color = Color(0.560784, 0.564706, 0.623529, 0.368627)
+
+[sub_resource type="FontFile" id="9"]
+fallbacks = Array[Font]([ExtResource("9")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="10"]
+fallbacks = Array[Font]([ExtResource("9")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="11"]
+fallbacks = Array[Font]([ExtResource("9")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="12"]
+fallbacks = Array[Font]([ExtResource("9")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/32/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/32/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxTexture" id="13"]
+texture = ExtResource("7")
+region_rect = Rect2(0, 0, 38, 64)
+modulate_color = Color(0.196078, 0.329412, 0.47451, 0.439216)
+
+[sub_resource type="FontFile" id="14"]
+fallbacks = Array[Font]([ExtResource("9")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/32/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/32/0 = Vector2(0, 0)
+
+[node name="SplashControl" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2")
+wait_time = 3.0
+
+[node name="NextSceneTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="BG" type="TextureRect" parent="."]
+modulate = Color(0.0156863, 0.392157, 0.631373, 1)
+clip_contents = true
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("10")
+expand_mode = 1
+
+[node name="CloudControl" type="Control" parent="."]
+clip_contents = true
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Cloud_1" type="TextureRect" parent="CloudControl"]
+layout_mode = 0
+anchor_left = -0.323242
+anchor_top = 0.553333
+anchor_right = 1.44727
+anchor_bottom = 0.71
+texture = SubResource("1")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloud_2" type="TextureRect" parent="CloudControl"]
+layout_mode = 0
+anchor_left = -0.323242
+anchor_top = 0.606667
+anchor_right = 1.44727
+anchor_bottom = 0.763333
+texture = SubResource("2")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloud_3" type="TextureRect" parent="CloudControl"]
+layout_mode = 0
+anchor_left = -0.323242
+anchor_top = 0.655
+anchor_right = 1.44727
+anchor_bottom = 0.811667
+texture = SubResource("3")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloud_4" type="TextureRect" parent="CloudControl"]
+layout_mode = 0
+anchor_left = -0.323242
+anchor_top = 0.711667
+anchor_right = 1.44727
+anchor_bottom = 0.868333
+texture = SubResource("4")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloud_5" type="TextureRect" parent="CloudControl"]
+layout_mode = 0
+anchor_left = -0.399414
+anchor_top = 0.803333
+anchor_right = 1.37109
+anchor_bottom = 0.96
+texture = SubResource("5")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloud_6" type="TextureRect" parent="CloudControl"]
+layout_mode = 0
+anchor_left = -0.636719
+anchor_top = 0.88
+anchor_right = 1.41895
+anchor_bottom = 1.07333
+texture = SubResource("6")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="LabelControl" type="Control" parent="."]
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="FOGLabel" type="Label" parent="LabelControl"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 0.238333
+theme_override_fonts/font = SubResource("7")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("8")
+text = "FOG Studios"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="BuildItLabel" type="Label" parent="LabelControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.505208
+anchor_top = 0.305556
+anchor_right = 0.644097
+anchor_bottom = 0.364198
+theme_override_fonts/font = SubResource("9")
+text = "if you build it
+the bugs will come"
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="PoweredByLabel" type="Label" parent="LabelControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.818576
+anchor_top = 0.478395
+anchor_right = 0.967882
+anchor_bottom = 0.537037
+theme_override_fonts/font = SubResource("10")
+text = "power by godot and
+fogstudios.itch.io"
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="VersionLabel" type="Label" parent="LabelControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.875243
+anchor_top = 0.966049
+anchor_right = 0.984375
+anchor_bottom = 0.995062
+offset_left = -0.280029
+offset_bottom = 0.199951
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("11")
+text = "Version 3.5.1.0"
+metadata/_edit_use_anchors_ = true
+
+[node name="FieldLabel" type="Label" parent="LabelControl"]
+layout_mode = 0
+anchor_left = 0.109375
+anchor_top = 0.23
+anchor_right = 0.265625
+anchor_bottom = 0.516667
+theme_override_fonts/font = SubResource("12")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("13")
+text = "f          g
+i       a
+ e    m 
+l       e
+d          s"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="LabelControl/FieldLabel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.394444
+anchor_top = 0.134367
+anchor_right = 0.638889
+anchor_bottom = 0.699159
+offset_bottom = 0.0840073
+theme_override_fonts/font = SubResource("14")
+theme_override_font_sizes/font_size = 32
+text = "\\ /
+O
+F"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="NextSceneTimer" to="." method="_on_NextSceneTimer_timeout"]

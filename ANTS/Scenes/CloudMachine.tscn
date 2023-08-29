@@ -1,0 +1,100 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Cloud5.png" type="Texture2D" id=1]
+[ext_resource path="res://Assets/Cloud6.png" type="Texture2D" id=2]
+[ext_resource path="res://Assets/Cloud3.png" type="Texture2D" id=3]
+[ext_resource path="res://Assets/Cloud4.png" type="Texture2D" id=4]
+[ext_resource path="res://Assets/Cloud1.png" type="Texture2D" id=5]
+[ext_resource path="res://Assets/Cloud2.png" type="Texture2D" id=6]
+
+[node name="CloudMachine" type="Node2D"]
+
+[node name="Cloud_1" type="CPUParticles2D" parent="."]
+position = Vector2( -1073, 0 )
+scale = Vector2( 5, 0.1 )
+amount = 3
+lifetime = 100.0
+explosiveness = 0.1
+randomness = 0.5
+fixed_fps = 60
+draw_order = 1
+texture = ExtResource( 5 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, -400 )
+direction = Vector2( 20, 0 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 8.0
+
+[node name="Cloud_2" type="CPUParticles2D" parent="."]
+position = Vector2( -1632, 0 )
+scale = Vector2( 5, 0.1 )
+amount = 3
+lifetime = 100.0
+explosiveness = 0.1
+randomness = 0.5
+fixed_fps = 60
+texture = ExtResource( 6 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, -400 )
+direction = Vector2( 20, 0 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 8.0
+
+[node name="Cloud_3" type="CPUParticles2D" parent="."]
+position = Vector2( -1308, 0 )
+scale = Vector2( 5, 0.1 )
+amount = 3
+lifetime = 100.0
+explosiveness = 0.1
+randomness = 0.5
+fixed_fps = 60
+texture = ExtResource( 3 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, -400 )
+direction = Vector2( 20, 0 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 8.0
+
+[node name="Cloud_4" type="CPUParticles2D" parent="."]
+position = Vector2( -743, 0 )
+scale = Vector2( 5, 0.1 )
+amount = 3
+lifetime = 100.0
+explosiveness = 0.1
+randomness = 0.5
+fixed_fps = 60
+texture = ExtResource( 4 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, -400 )
+direction = Vector2( 20, 0 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 8.0
+
+[node name="Cloud_5" type="CPUParticles2D" parent="."]
+position = Vector2( -464, 0 )
+scale = Vector2( 5, 0.1 )
+amount = 3
+lifetime = 100.0
+explosiveness = 0.1
+randomness = 0.5
+fixed_fps = 60
+texture = ExtResource( 1 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, -400 )
+direction = Vector2( 20, 0 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 8.0
+
+[node name="Cloud_6" type="CPUParticles2D" parent="."]
+scale = Vector2( 5, 0.1 )
+amount = 3
+lifetime = 100.0
+explosiveness = 0.1
+randomness = 0.5
+fixed_fps = 60
+texture = ExtResource( 2 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1, -400 )
+direction = Vector2( 20, 0 )
+gravity = Vector2( 0, 0 )
+initial_velocity = 8.0

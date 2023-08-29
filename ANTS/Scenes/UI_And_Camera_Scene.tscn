@@ -1,0 +1,864 @@
+[gd_scene load_steps=40 format=3 uid="uid://nh3dxx1rbh3o"]
+
+[ext_resource type="PackedScene" path="res://Scenes/DayCycleIcon.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://b1re4scudyjol" path="res://Assets/LeafIcon.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dgdifsnvvllwn" path="res://Assets/WoodIcon.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://d2dx3u8n2joe4" path="res://Assets/PlusButtons.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c0mxre1gb8q32" path="res://Assets/MinusButtons.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://b7c5mwg3om70q" path="res://Assets/FoodIcon.png" id="7"]
+[ext_resource type="FontFile" uid="uid://dh7kinim2mddj" path="res://EquipmentPro.ttf" id="8"]
+[ext_resource type="Script" path="res://Scripts/UI_And_Camera_Scene.gd" id="9"]
+[ext_resource type="FontFile" uid="uid://l5p47kllst7d" path="res://Assets/quan.ttf" id="10"]
+[ext_resource type="Texture2D" uid="uid://di3u88tgna22a" path="res://Assets/AntBoard.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bcl2n3x4h7dmj" path="res://Assets/Bae_Kin_sHouse1.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dm0icl80nb0be" path="res://Assets/Bae_Kin_sHouse2.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://tv2utfsgcsb5" path="res://Assets/AntHillEntrance.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://d3fouudd10end" path="res://Assets/AntTopGrass.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://db84khsv5d4ck" path="res://Assets/Buttons.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://bfq2gffenmyge" path="res://Assets/TargetIcon.png" id="17"]
+[ext_resource type="PackedScene" uid="uid://cvo5tjox0ft84" path="res://Scenes/WorkerAntProfile.tscn" id="18"]
+[ext_resource type="Texture2D" uid="uid://6u5b7hwmjl8n" path="res://Assets/UncheckedBox.png" id="18_i611v"]
+[ext_resource type="Texture2D" uid="uid://dm0caa7a38y7i" path="res://Assets/CheckedBox.png" id="19_v7dss"]
+
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("8")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("8")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("8")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="4"]
+fallbacks = Array[Font]([ExtResource("8")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="5"]
+fallbacks = Array[Font]([ExtResource("8")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="6"]
+fallbacks = Array[Font]([ExtResource("8")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="7"]
+fallbacks = Array[Font]([ExtResource("8")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="8"]
+fallbacks = Array[Font]([ExtResource("8")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="9"]
+fallbacks = Array[Font]([ExtResource("10")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="10"]
+fallbacks = Array[Font]([ExtResource("10")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="AtlasTexture" id="15"]
+atlas = ExtResource("16")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="16"]
+atlas = ExtResource("16")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="FontFile" id="17"]
+fallbacks = Array[Font]([ExtResource("10")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="20"]
+fallbacks = Array[Font]([ExtResource("10")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="22"]
+fallbacks = Array[Font]([ExtResource("10")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="Theme" id="23"]
+TooltipLabel/colors/font_color = Color(0, 0, 0, 1)
+TooltipLabel/colors/font_color_shadow = Color(0, 0, 0, 0.1)
+TooltipLabel/constants/shadow_offset_x = 1
+TooltipLabel/constants/shadow_offset_y = 1
+TooltipLabel/fonts/font = SubResource("22")
+
+[sub_resource type="FontFile" id="21"]
+fallbacks = Array[Font]([ExtResource("10")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="11"]
+fallbacks = Array[Font]([ExtResource("10")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="12"]
+fallbacks = Array[Font]([ExtResource("10")])
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/64/0 = Vector2(0, 0)
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/32/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/64/0 = Vector2(0, 0)
+cache/0/64/0/ascent = 0.0
+cache/0/64/0/descent = 0.0
+cache/0/64/0/underline_position = 0.0
+cache/0/64/0/underline_thickness = 0.0
+cache/0/64/0/scale = 1.0
+cache/0/64/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/64/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/64/0/kerning_overrides/64/0 = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yfk4j"]
+font = ExtResource("10")
+
+[node name="UI_And_Camera_Scene" type="CanvasLayer"]
+script = ExtResource("9")
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = 0.053
+anchor_right = 0.5
+anchor_bottom = 0.053
+offset_top = 0.207993
+offset_bottom = 0.207993
+
+[node name="DayCycleIcon" parent="Control2" instance=ExtResource("1")]
+position = Vector2(0, 7.00022)
+
+[node name="WoodIcon" type="Sprite2D" parent="."]
+position = Vector2(52, 246)
+texture = ExtResource("4")
+
+[node name="WoodLabel" type="Label" parent="WoodIcon"]
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.906
+anchor_bottom = 1.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = -15.992
+offset_bottom = -16.0
+theme_override_fonts/font = SubResource("1")
+text = "Wood"
+
+[node name="Amount" type="Label" parent="WoodIcon/WoodLabel"]
+layout_mode = 0
+anchor_left = 1.31034
+anchor_right = 1.7931
+anchor_bottom = 1.0
+theme_override_fonts/font = SubResource("2")
+text = "99"
+
+[node name="LeafIcon" type="Sprite2D" parent="."]
+position = Vector2(52, 303)
+texture = ExtResource("2")
+
+[node name="LeafLabel" type="Label" parent="LeafIcon"]
+anchors_preset = -1
+anchor_top = 0.937
+anchor_right = 0.875
+anchor_bottom = 1.437
+offset_left = -16.0
+offset_top = -15.984
+offset_right = -16.0
+offset_bottom = -15.984
+theme_override_fonts/font = SubResource("3")
+text = "Leaf"
+
+[node name="Amount" type="Label" parent="LeafIcon/LeafLabel"]
+layout_mode = 0
+anchor_left = 1.35714
+anchor_right = 1.85714
+anchor_bottom = 1.0
+theme_override_fonts/font = SubResource("4")
+text = "99"
+
+[node name="FoodIcon" type="Sprite2D" parent="."]
+position = Vector2(52, 359)
+texture = ExtResource("7")
+
+[node name="FoodLabel" type="Label" parent="FoodIcon"]
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.844
+anchor_bottom = 1.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = -16.008
+offset_bottom = -16.0
+theme_override_fonts/font = SubResource("5")
+text = "Food"
+
+[node name="Amount" type="Label" parent="FoodIcon/FoodLabel"]
+layout_mode = 0
+anchor_left = 1.40741
+anchor_right = 1.92637
+anchor_bottom = 1.0
+offset_right = -0.0120049
+theme_override_fonts/font = SubResource("6")
+text = "99"
+
+[node name="AntPharomoneButton" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2(36, 402.89)
+
+[node name="PharomoneLabel" type="Label" parent="AntPharomoneButton"]
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.9375
+anchor_bottom = 1.5
+theme_override_fonts/font = SubResource("7")
+text = "Home"
+
+[node name="Time" type="Label" parent="AntPharomoneButton/PharomoneLabel"]
+layout_mode = 0
+anchor_left = 1.26667
+anchor_right = 1.73333
+anchor_bottom = 1.0
+theme_override_fonts/font = SubResource("8")
+text = "99"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.897
+anchor_top = 0.039
+anchor_right = 0.993
+anchor_bottom = 0.144
+offset_left = -0.343994
+offset_top = -0.272001
+offset_right = 0.0639648
+offset_bottom = -0.312004
+metadata/_edit_use_anchors_ = true
+
+[node name="ZoomIn" type="TouchScreenButton" parent="Control"]
+position = Vector2(9, 21)
+texture_normal = ExtResource("5")
+texture_pressed = ExtResource("5")
+
+[node name="ZoomOut" type="TouchScreenButton" parent="Control"]
+position = Vector2(65.1301, 21)
+texture_normal = ExtResource("6")
+texture_pressed = ExtResource("6")
+
+[node name="PharomoneTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="AntProfileControl" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.035
+anchor_top = 0.0133333
+anchor_right = 0.403
+anchor_bottom = 0.345
+offset_left = -3.32
+offset_right = -3.15204
+offset_bottom = 1.52588e-05
+metadata/_edit_use_anchors_ = true
+
+[node name="BG" type="TextureRect" parent="AntProfileControl"]
+layout_mode = 0
+anchor_top = 0.0611006
+anchor_right = 1.0
+anchor_bottom = 0.292256
+mouse_filter = 0
+texture = ExtResource("11")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="AntProfileControl/BG"]
+show_behind_parent = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.261675
+anchor_right = 0.999755
+anchor_bottom = 4.0459
+texture = ExtResource("11")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AntBoardLabel" type="Label" parent="AntProfileControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.00465289
+anchor_right = 0.999755
+anchor_bottom = 0.0977108
+theme_override_fonts/font = SubResource("9")
+text = "Ant Board"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="NameLabel" type="Label" parent="AntProfileControl/AntBoardLabel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0448113
+anchor_top = 1.368
+anchor_right = 0.143868
+anchor_bottom = 2.318
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("10")
+text = "Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="FoodJob" type="Label" parent="AntProfileControl/AntBoardLabel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.370283
+anchor_top = 1.368
+anchor_right = 0.459906
+anchor_bottom = 2.318
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("10")
+text = "Food"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="WoodJob" type="Label" parent="AntProfileControl/AntBoardLabel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.492925
+anchor_top = 1.368
+anchor_right = 0.591981
+anchor_bottom = 2.318
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("10")
+text = "Wood"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="LeafJob" type="Label" parent="AntProfileControl/AntBoardLabel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.632075
+anchor_top = 1.368
+anchor_right = 0.716981
+anchor_bottom = 2.318
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("10")
+text = "Leaf"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DefenseJob" type="Label" parent="AntProfileControl/AntBoardLabel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.728774
+anchor_top = 1.418
+anchor_right = 0.889151
+anchor_bottom = 2.368
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("10")
+text = "Defense"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="AntProfileControl"]
+custom_minimum_size = Vector2(0, 94)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0162122
+anchor_top = 0.206131
+anchor_right = 0.970695
+anchor_bottom = 0.99974
+offset_left = -0.111992
+offset_top = -0.0200806
+offset_right = 0.0481567
+offset_bottom = 0.0517578
+size_flags_horizontal = 0
+size_flags_vertical = 2
+follow_focus = true
+
+[node name="ProfileGridControl" type="GridContainer" parent="AntProfileControl/ScrollContainer"]
+custom_minimum_size = Vector2(0, 94)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme_override_constants/v_separation = 0
+
+[node name="ScrollSetDelayTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="MinimizeAntBoard" type="TextureButton" parent="."]
+anchors_preset = -1
+anchor_left = 0.363
+anchor_top = 0.002
+anchor_right = 0.395
+anchor_bottom = 0.055
+offset_left = 0.287994
+offset_top = -0.2
+offset_right = -0.480011
+toggle_mode = true
+texture_normal = ExtResource("6")
+
+[node name="BabyControl" type="Control" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 3
+anchor_left = 0.6
+anchor_top = 0.071
+anchor_right = 0.628
+anchor_bottom = 0.12
+offset_left = -0.200012
+offset_top = -0.00800323
+offset_right = -0.456055
+offset_bottom = 0.239998
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="HaveBabyControl" type="TextureButton" parent="BabyControl"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("6")
+texture_pressed = ExtResource("6")
+metadata/_edit_use_anchors_ = true
+
+[node name="AddAnt" type="TextureButton" parent="BabyControl"]
+visible = false
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.5
+anchor_top = 1.375
+anchor_right = 1.5
+anchor_bottom = 3.375
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = SubResource("15")
+texture_pressed = SubResource("16")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="BabyControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.46875
+anchor_top = -1.21875
+anchor_right = 1.53125
+anchor_bottom = -0.03125
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_fonts/font = SubResource("17")
+text = "Create Ants"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="BabyControlTimer" type="Timer" parent="BabyControl"]
+wait_time = 3.0
+one_shot = true
+
+[node name="ResetItemsControl" type="Control" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 3
+anchor_left = 0.69859
+anchor_top = 0.073
+anchor_right = 0.726
+anchor_bottom = 0.122
+offset_left = -0.776062
+offset_top = -0.304001
+offset_right = -0.35199
+offset_bottom = -0.0560074
+metadata/_edit_use_anchors_ = true
+
+[node name="ResetTimer" type="Timer" parent="ResetItemsControl"]
+wait_time = 3.0
+one_shot = true
+
+[node name="OpenReset" type="TextureButton" parent="ResetItemsControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09375
+anchor_top = -0.03125
+anchor_right = 1.09375
+anchor_bottom = 0.96875
+toggle_mode = true
+texture_normal = ExtResource("6")
+texture_pressed = ExtResource("6")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="ResetItemsControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.09375
+anchor_top = -1.25
+anchor_right = 2.4375
+anchor_bottom = -0.06225
+offset_bottom = -0.00799942
+theme_override_fonts/font = SubResource("20")
+text = "Reset Marked Items"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="MarkedButtonControl" type="Control" parent="ResetItemsControl"]
+visible = false
+anchors_preset = 0
+anchor_top = 0.825
+anchor_right = 1.0
+anchor_bottom = 3.625
+
+[node name="GridContainer" type="GridContainer" parent="ResetItemsControl/MarkedButtonControl"]
+layout_mode = 0
+anchor_left = 0.1
+anchor_top = 0.0373832
+anchor_right = 0.9
+anchor_bottom = 1.00935
+
+[node name="FoodSelected" type="TextureButton" parent="ResetItemsControl/MarkedButtonControl/GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture_normal = ExtResource("7")
+
+[node name="WoodSelected" type="TextureButton" parent="ResetItemsControl/MarkedButtonControl/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4")
+
+[node name="TextureButton" type="TextureButton" parent="ResetItemsControl/MarkedButtonControl/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+
+[node name="DefenseControl" type="Control" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 3
+anchor_left = 0.822
+anchor_top = 0.07
+anchor_right = 0.85
+anchor_bottom = 0.119
+offset_left = 3.05597
+offset_top = 0.639999
+offset_right = 2.79999
+offset_bottom = 0.888
+metadata/_edit_use_anchors_ = true
+
+[node name="TargetButton" type="TextureButton" parent="DefenseControl"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Press button to locate defensive position"
+theme = SubResource("23")
+texture_normal = ExtResource("17")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="DefenseControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.5625
+anchor_top = -1.21875
+anchor_right = 1.53075
+anchor_bottom = -0.031
+offset_right = 0.0159912
+offset_bottom = -0.00799942
+theme_override_fonts/font = SubResource("21")
+text = "Defend Position"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="FakeOutsideLoadScene" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="BaeKinSHouse2" type="TextureRect" parent="FakeOutsideLoadScene"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("13")
+expand_mode = 1
+
+[node name="BaeKinSHouse1" type="TextureRect" parent="FakeOutsideLoadScene"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("12")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="FakeOutsideLoadScene"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("11")
+text = "Loading the outside world.
+Please be patient"
+
+[node name="FakeAntHillLoadScene2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="BaeKinSHouse2" type="TextureRect" parent="FakeAntHillLoadScene2"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("15")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="BaeKinSHouse1" type="TextureRect" parent="FakeAntHillLoadScene2"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("14")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="FakeAntHillLoadScene2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("12")
+theme_override_font_sizes/font_size = 64
+text = "Loading the anthill.
+Please be patient"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+zoom = Vector2(5, 5)
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="WorkerAntProfile" parent="." instance=ExtResource("18")]
+visible = false
+offset_left = 731.0
+offset_top = 123.0
+offset_right = 731.48
+offset_bottom = 123.2
+
+[node name="BuildControl" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.876736
+anchor_top = 0.140432
+anchor_right = 1.0
+anchor_bottom = 0.229938
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="BuildMode" type="TextureButton" parent="BuildControl"]
+modulate = Color(0.627451, 0.627451, 0.627451, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.112676
+anchor_top = 0.327586
+anchor_right = 0.887324
+anchor_bottom = 0.913793
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("18_i611v")
+texture_pressed = ExtResource("19_v7dss")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="BuildControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0344828
+anchor_right = 1.0
+anchor_bottom = 0.362069
+grow_horizontal = 2
+grow_vertical = 2
+text = "Build Mode"
+label_settings = SubResource("LabelSettings_yfk4j")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="tree_exiting" from="." to="." method="_on_UI_And_Camera_Scene_tree_exiting"]
+[connection signal="pressed" from="AntPharomoneButton" to="." method="_on_AntPharomoneButton_pressed"]
+[connection signal="pressed" from="Control/ZoomIn" to="." method="_on_ZoomIn_pressed"]
+[connection signal="pressed" from="Control/ZoomOut" to="." method="_on_ZoomOut_pressed"]
+[connection signal="timeout" from="PharomoneTimer" to="." method="_on_PharomoneTimer_timeout"]
+[connection signal="timeout" from="ScrollSetDelayTimer" to="." method="_on_ScrollSetDelayTimer_timeout"]
+[connection signal="toggled" from="MinimizeAntBoard" to="." method="_on_MinimizeAntBoard_toggled"]
+[connection signal="toggled" from="BabyControl/HaveBabyControl" to="." method="_on_HaveBabyControl_toggled"]
+[connection signal="toggled" from="BabyControl/AddAnt" to="." method="_on_AddAnt_toggled"]
+[connection signal="timeout" from="BabyControl/BabyControlTimer" to="." method="_on_BabyControlTimer_timeout"]
+[connection signal="timeout" from="ResetItemsControl/ResetTimer" to="." method="_on_ResetTimer_timeout"]
+[connection signal="toggled" from="ResetItemsControl/OpenReset" to="." method="_on_OpenReset_toggled"]
+[connection signal="pressed" from="ResetItemsControl/MarkedButtonControl/GridContainer/FoodSelected" to="." method="_on_FoodSelected_pressed"]
+[connection signal="pressed" from="ResetItemsControl/MarkedButtonControl/GridContainer/WoodSelected" to="." method="_on_WoodSelected_pressed"]
+[connection signal="pressed" from="ResetItemsControl/MarkedButtonControl/GridContainer/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="DefenseControl/TargetButton" to="." method="_on_TargetButton_pressed"]
+[connection signal="button_up" from="WorkerAntProfile/AntProfile/TextControl/XButton" to="." method="_on_XButton_button_up"]
+[connection signal="toggled" from="BuildControl/BuildMode" to="." method="_on_build_mode_toggled"]
+
+[editable path="WorkerAntProfile"]

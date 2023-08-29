@@ -1,0 +1,625 @@
+[gd_scene load_steps=20 format=3 uid="uid://bu6aockv1ks11"]
+
+[ext_resource type="Texture2D" uid="uid://cttlc11dgdcis" path="res://Assets/AntSprite.png" id="1"]
+[ext_resource type="Script" path="res://Scripts/Carl.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dgv15tj371wi5" path="res://Assets/BackArrowWhite.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://voyw2x7jlja0" path="res://Assets/SingleRadarSprite.png" id="4"]
+
+[sub_resource type="Animation" id="1"]
+resource_name = "Idle"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AntBody/AntButt:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(-0.0078125, 10), Vector2(-0.0078125, 10)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AntBody/AntHead/RightAntenna:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(5, -13), Vector2(5, -13)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AntBody/TopLegR:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(5, -6), Vector2(5, -6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AntBody:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AntBody/TopLegL:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(-5, -6), Vector2(-5, -6)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AntBody/AntHead/LeftAntenna:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, -13), Vector2(-5, -13)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AntBody/MiddleLegL:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(-5, 5), Vector2(-5, 5)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AntBody/AntButt/BackLegL:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(-6, 4.5), Vector2(-6, 4.5)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AntBody/MiddleLegR:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(5, 5), Vector2(5, 5)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AntBody/AntButt/BackLegR:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(6, 4.5), Vector2(6, 4.5)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AntBody/AntHead:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(0, -10.5), Vector2(0, -10.5)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AntBody/AntHead:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0.4, 0.8, 1.2, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [15.0, 15.0, -10.0, -10.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AntBody/AntHead/RightAntenna:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.5, 0.6, 0.8, 1.2, 1.3, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 25.0, -25.0, 25.0, 0.0, 25.0, -25.0, 25.0, 0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AntBody/AntHead/LeftAntenna:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.5, 0.6, 0.8, 1.2, 1.3, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -25.0, 25.0, -25.0, 0.0, -25.0, 25.0, -25.0, 0.0]
+}
+
+[sub_resource type="Animation" id="2"]
+resource_name = "Walk"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AntBody/AntButt:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-0.0078125, 10), Vector2(-0.0078125, 10)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AntBody/AntHead/RightAntenna:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(5, -13), Vector2(5, -13)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AntBody/TopLegR:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(5, -6), Vector2(5, -6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AntBody:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AntBody/TopLegL:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, -6), Vector2(-5, -6)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AntBody/AntHead/LeftAntenna:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, -13), Vector2(-5, -13)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AntBody/MiddleLegL:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, 5), Vector2(-5, 5)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AntBody/AntButt/BackLegL:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-6, 4.5), Vector2(-6, 4.5)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AntBody/MiddleLegR:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(5, 5), Vector2(5, 5)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AntBody/AntButt/BackLegR:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(6, 4.5), Vector2(6, 4.5)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AntBody/AntHead:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -10.5), Vector2(0, -10.5)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AntBody/TopLegR:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [15.0, 0.0, -15.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AntBody/AntButt/BackLegR:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [15.0, 0.0, -15.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AntBody/MiddleLegL:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-15.0, 0.0, 15.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AntBody/TopLegL:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [15.0, 0.0, -15.0]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AntBody/AntButt/BackLegL:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [15.0, 0.0, -15.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("AntBody/MiddleLegR:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-15.0, 0.0, 15.0]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("AntBody/AntHead:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u25of"]
+_data = {
+"Idle": SubResource("1"),
+"Walk": SubResource("2")
+}
+
+[sub_resource type="CircleShape2D" id="15"]
+
+[sub_resource type="CircleShape2D" id="4"]
+radius = 310.644
+
+[sub_resource type="CircleShape2D" id="5"]
+radius = 36.0555
+
+[sub_resource type="AtlasTexture" id="8"]
+atlas = ExtResource("4")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="9"]
+atlas = ExtResource("4")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="10"]
+atlas = ExtResource("4")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="11"]
+atlas = ExtResource("4")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="12"]
+atlas = ExtResource("4")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="13"]
+atlas = ExtResource("4")
+region = Rect2(1280, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="14"]
+atlas = ExtResource("4")
+region = Rect2(1536, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("8")
+}, {
+"duration": 1.0,
+"texture": SubResource("9")
+}, {
+"duration": 1.0,
+"texture": SubResource("10")
+}, {
+"duration": 1.0,
+"texture": SubResource("11")
+}, {
+"duration": 1.0,
+"texture": SubResource("12")
+}, {
+"duration": 1.0,
+"texture": SubResource("13")
+}, {
+"duration": 1.0,
+"texture": SubResource("14")
+}],
+"loop": true,
+"name": &"Radar",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="7"]
+radius = 110.0
+
+[node name="Carl" type="CharacterBody2D"]
+z_index = 1
+scale = Vector2(0.1, 0.1)
+collision_layer = 2
+script = ExtResource("2")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 8.0
+navigation_layers = 5
+radius = 1.0
+
+[node name="BackArrowWhite" type="Sprite2D" parent="."]
+visible = false
+light_mask = 0
+scale = Vector2(2.36, 1)
+texture = ExtResource("3")
+offset = Vector2(36, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_u25of")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16.3613, 0)
+rotation = 1.5708
+shape = SubResource("15")
+
+[node name="AntBody" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1")
+region_enabled = true
+region_rect = Rect2(26, 21, 12, 21)
+
+[node name="TopLegR" type="Sprite2D" parent="AntBody"]
+position = Vector2(5, -6)
+rotation = 0.261799
+texture = ExtResource("1")
+offset = Vector2(7, 0)
+region_enabled = true
+region_rect = Rect2(49, 20, 14, 7)
+
+[node name="TopLegL" type="Sprite2D" parent="AntBody"]
+position = Vector2(-5, -6)
+rotation = 0.261799
+texture = ExtResource("1")
+offset = Vector2(-7, 0)
+region_enabled = true
+region_rect = Rect2(1, 21, 14, 7)
+
+[node name="MiddleLegL" type="Sprite2D" parent="AntBody"]
+position = Vector2(-5, 5)
+rotation = -0.261799
+texture = ExtResource("1")
+offset = Vector2(-7, 0)
+region_enabled = true
+region_rect = Rect2(1, 37, 14, 7)
+
+[node name="MiddleLegR" type="Sprite2D" parent="AntBody"]
+position = Vector2(5, 5)
+rotation = -0.261799
+texture = ExtResource("1")
+offset = Vector2(7, 0)
+region_enabled = true
+region_rect = Rect2(49, 37, 14, 7)
+
+[node name="AntHead" type="Sprite2D" parent="AntBody"]
+position = Vector2(0, -10.5)
+texture = ExtResource("1")
+offset = Vector2(0, -7.5)
+region_enabled = true
+region_rect = Rect2(24, 1, 16, 15)
+
+[node name="LeftAntenna" type="Sprite2D" parent="AntBody/AntHead"]
+position = Vector2(-5, -13)
+texture = ExtResource("1")
+offset = Vector2(-3.5, -6)
+region_enabled = true
+region_rect = Rect2(5, 2, 7, 12)
+
+[node name="RightAntenna" type="Sprite2D" parent="AntBody/AntHead"]
+position = Vector2(5, -13)
+texture = ExtResource("1")
+offset = Vector2(3.5, -6)
+region_enabled = true
+region_rect = Rect2(52, 2, 7, 12)
+
+[node name="AntButt" type="Sprite2D" parent="AntBody"]
+position = Vector2(-0.0078125, 10)
+texture = ExtResource("1")
+offset = Vector2(0, 9)
+region_enabled = true
+region_rect = Rect2(25, 45, 14, 18)
+
+[node name="BackLegL" type="Sprite2D" parent="AntBody/AntButt"]
+position = Vector2(-6, 4.5)
+rotation = 0.261799
+texture = ExtResource("1")
+offset = Vector2(-6.5, 0)
+region_enabled = true
+region_rect = Rect2(1, 53, 13, 7)
+
+[node name="BackLegR" type="Sprite2D" parent="AntBody/AntButt"]
+position = Vector2(6, 4.5)
+rotation = 0.261799
+texture = ExtResource("1")
+offset = Vector2(6.5, 0)
+region_enabled = true
+region_rect = Rect2(50, 53, 13, 7)
+
+[node name="SniffFoodArea" type="Area2D" parent="."]
+visible = false
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SniffFoodArea"]
+shape = SubResource("4")
+
+[node name="OutsideDetection" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2147483648
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OutsideDetection"]
+shape = SubResource("5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(2.8, 2.8)
+sprite_frames = SubResource("6")
+animation = &"Radar"
+frame = 2
+
+[node name="DirtCheck" type="RayCast2D" parent="."]
+target_position = Vector2(35, 0)
+
+[node name="DirtDeleteTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="DirtCheckArea" type="Area2D" parent="."]
+position = Vector2(120, 0)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DirtCheckArea"]
+shape = SubResource("7")
+
+[connection signal="area_entered" from="OutsideDetection" to="." method="_on_OutsideDetection_area_entered"]
+[connection signal="area_exited" from="OutsideDetection" to="." method="_on_OutsideDetection_area_exited"]
+[connection signal="timeout" from="DirtDeleteTimer" to="." method="_on_DirtDeleteTimer_timeout"]
+[connection signal="input_event" from="DirtCheckArea" to="." method="_on_DirtCheckArea_input_event"]
